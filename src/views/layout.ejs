@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%=title%></title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+<%- include('_head.ejs') %>
 
 <body>
-  <%-contents%>
-  <%- include('./vendor/bootstrap/_script') %>
+  <div class="d-flex">
+    <header>
+      <nav>
+        <a href=""><img src="../assets/images/logo-ANSWER.svg" alt="" srcset=""></a>
+        <ul class="list-unstyled">
+          <li><a class="d-flex align-items-center" href="">
+              <i class="material-icons">insert_chart</i><span>Dashboard</span></a></li>
+          <li><a class="d-flex align-items-center" href=""><i
+                class="material-icons">forum</i><span>Assignment</span></a></li>
+          <li><a class="d-flex align-items-center" href=""><i
+                class="material-icons">assignment</i><span>Course</span></a></li>
+          <li><a class="d-flex align-items-center" href=""><i
+                class="material-icons">video_library</i><span>Question</span></a></li>
+          <li><a class="d-flex align-items-center" href=""><i
+                class="material-icons">supervisor_account</i><span>Admin</span></a></li>
+          <li><a class="d-flex align-items-center" href=""><i
+                class="material-icons">settings</i><span>Settings</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main> <%-contents%></main>
+  </div>
+
+  <%- include('../assets/vendor/bootstrap/_script') %>
 </body>
 
 </html>
