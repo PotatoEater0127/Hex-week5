@@ -23,6 +23,6 @@
     "lodash": "^4.17.15",
     "lodash.template": "^4.5.0",
     "minimist": "^1.2.5",
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   }
 }
